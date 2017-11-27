@@ -1,0 +1,12 @@
+<label><h3> Person </h3></label>
+<li><a href="/figures/<%= @figure.id%>"><%=@figure.name%></a></li>
+
+<label><h3> Landmarks: </h3></label>
+<%@figure.landmarks.each do |landmark|%>
+<label><%=landmark.name%><label>
+  <%end%>
+
+<label><h3> Titles: </h3></label>
+<%@figure.titles.each do |title|%>
+<label><%=title.name%><label>
+  <%end%>
